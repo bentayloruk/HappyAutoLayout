@@ -47,6 +47,7 @@ type Constraint =
     | Set of view:UIView * attribute:ViewAttribute * relationship:AttributeRelationship * value:float32
 
 [<RequireQualifiedAccess>]
+/// Module containing Hal functions for working with constraints.
 module Hal = 
 
     /// <summary>Create constraints that pin the edges of view1 to the edges of view2.</summary>
@@ -56,6 +57,8 @@ module Hal =
           Mirror(view1, Left, view2)
           Mirror(view1, Bottom, view2) ]
 
+[<AutoOpen>]
+module UIExtensions = 
     type UIView with 
         /// <summary>Add multiple constraints to this view or its sub-views.  Sets TranslatesAutoresizingMaskIntoConstraints to false on all views that a constraint targets.</summary>
         /// <param name="constraints">The list of constraints to be added to this view.</param>
@@ -105,3 +108,5 @@ module Hal =
         /// <summary>Add a constraint relating to this view or sub-view.  Sets TranslatesAutoresizingMaskIntoConstraints to false on all views that a constraint targets.</summary>
         /// <param name="constraints">The constraint to be added to this view.</param>
         member __.AddConstraint(cons:Constraint) = __.AddConstraints([cons])
+
+
