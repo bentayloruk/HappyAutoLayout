@@ -1,4 +1,4 @@
-HappyLayout
+HappyAutoLayout
 ===========
 
 **Terse, readable and safe auto-layout DSL for Xamarin iOS.**
@@ -17,7 +17,7 @@ Or this:
 
 ```fsharp
 // Use the HappyLayout module function edgeConstraints, to create the 4 constraints I need.
-mainView.AddConstraints(edgeConstraints happyView mainView)
+mainView.AddConstraints(Hal.edgeConstraints happyView mainView)
 ```
 
 ## Constraint Types
@@ -30,6 +30,14 @@ There are three constraint types:
 
 **Set** directly specifies the value of a property on the view.
 
+## Contact
+
+[@bentayloruk](https://twitter.com/bentayloruk)
+
+## License
+
+HappyAutoLayout is licensed under MIT.
+
 ## Dragon Information
 
-HappyLayout is brought to you by Yak Shavers R Us.  I'm finding it useful, but would love to get feedback.  There may be dragons, but it's unlikely as the code is tiny.
+HappyAutoLayout is at 0.1.  It is a tiny bit of code, so don't let that worry you.
