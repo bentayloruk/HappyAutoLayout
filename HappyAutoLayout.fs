@@ -1,11 +1,11 @@
 ﻿// ------------------------------------------------------------------------
-// HAPPY LAYOUT :)
+// HAPPY AUTO LAYOUT :)
 // Terse, readable and safe auto-layout DSL for Xamarin iOS peeps.
 // Well, that was the plan...
 // (c) Ben Taylor 2014.  Available under MIT License.
 // ------------------------------------------------------------------------
 
-namespace HappyLayout
+namespace HappyAutoLayout
 
 open MonoTouch.UIKit
 
@@ -46,8 +46,8 @@ type Constraint =
     /// Constraint setting the attribute value of a view directly without reference to another view.
     | Set of view:UIView * attribute:ViewAttribute * relationship:AttributeRelationship * value:float32
 
-[<AutoOpen>]
-module HappyLayout = 
+[<RequireQualifiedAccess>]
+module Hal = 
 
     /// <summary>Create constraints that pin the edges of view1 to the edges of view2.</summary>
     let edgeConstraints view1 view2 =
