@@ -1,7 +1,7 @@
 HappyLayout
 ===========
 
-Terse, readable and safe auto-layout DSL for Xamarin iOS.
+**Terse, readable and safe auto-layout DSL for Xamarin iOS.**
 
 Write your constraints like this:
 
@@ -12,7 +12,9 @@ mainView.AddConstraints(
     Relate(happyView, Right, Equal, mainView, Right, Times(0.9f), Add(0.5f))
     Set(happyView, Bottom, Equal, 250.0f) ])
 ```    
+
 Or this:
+
 ```fsharp
 // Use the HappyLayout module function edgeConstraints, to create the 4 constraints I need.
 mainView.AddConstraints(edgeConstraints happyView mainView)
@@ -30,4 +32,4 @@ There are three constraint types:
 
 ## Dragon Information
 
-HappyLayout is brought to you by Yak Shaving.  I'm finding it useful, but would love to get feedback.  There may be dragons.
+HappyLayout is brought to you by Yak Shavers R Us.  I'm finding it useful, but would love to get feedback.  There may be dragons, but it's unlikely as the code is tiny.
