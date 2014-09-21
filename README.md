@@ -1,7 +1,7 @@
 HappyAutoLayout
 ===========
 
-**Terse, readable and safe auto-layout DSL for Xamarin iOS.**
+**Terse, readable and safe auto-layout F# DSL for Xamarin iOS.**
 
 Write your constraints like this:
 
@@ -29,6 +29,12 @@ There are three constraint types:
 **Mirror** specifies that a view property should mirror the value of the same property on the second view.  *You could specify this with `Relate`, but `Mirror` is shorter and clearly expresses your intent.*
 
 **Set** directly specifies the value of a property on the view.
+
+## Using HappyAutoLayout
+
+Grab [HappyAutoLayout.fs](https://github.com/bentayloruk/HappyAutoLayout/blob/master/HappyAutoLayout.fs) and put it in your F# iOS project.
+
+*HAL could be used from C# too.  Add an F# assembly project and this file and build away.  I might try it too one day, or you could just join us in F# land.  It's so warm and fuzzy here.*
 
 ## Contact
 
