@@ -9,7 +9,7 @@ Write your constraints like this:
 mainView.AddConstraints(
   [ Mirror(happyView, Top, mainView)
     Relate(happyView, Left, Equal, mainView, Left, Times(0.8f), AddZero)
-    Relate(happyView, Right, Equal, mainView, Right, Times(0.9f), Add(0.5f))
+    Relate(happyView, Right, Equal, mainView, Right, Times(0.5f), Add(10.0f))
     Set(happyView, Bottom, Equal, 250.0f) ])
 ```    
 
