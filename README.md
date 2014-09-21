@@ -5,7 +5,7 @@ HappyAutoLayout
 
 Write your constraints like this:
 
-```fsharp
+```FSharp
 mainView.AddConstraints(
   [ Mirror(happyView, Top, mainView)
     Relate(happyView, Left, Equal, mainView, Left, Times(0.8f), AddZero)
@@ -15,7 +15,7 @@ mainView.AddConstraints(
 
 Or this:
 
-```fsharp
+```FSharp
 // Use the HappyLayout module function edgeConstraints, to create the 4 constraints I need.
 mainView.AddConstraints(Hal.edgeConstraints happyView mainView)
 ```
